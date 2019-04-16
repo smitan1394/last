@@ -2,7 +2,7 @@
     fxLayout="row wrap"
     fxLayout.sm="column"
     fxLayout.xs="column"
-    fxLayoutAlign.gt-md="space-around center"
+    fxLayoutAlign.gt-md="space-around"
     fxLayoutGap="10px"
     fxLayoutGap.xs="0">
 
@@ -38,7 +38,8 @@
   <mat-list *ngIf="dish">
     <h3>Comments</h3>
   <mat-list-item *ngFor="let comment of dish.comments">
-  <p matline> {{ comment.comment }} <br/> {{comment.rating }} Stars <br/><span> -- {{ comment.author }} {{comment.date | date }}</span><br/><br/></p><br/><br/>
+
+<p matline> {{ comment.comment }} <br/> {{comment.rating }} Stars <br/><span> -- {{ comment.author }} {{comment.date | date }}</span></p>
   </mat-list-item>
   </mat-list>
 
