@@ -103,12 +103,13 @@ export class DishdetailComponent implements OnInit {
      console.log(this.comment);
 
      this.dish.comments.push(this.comment);
+     this.commentFormDirective.resetForm();
      this.commentForm.reset({
        author: '',
        rating: 5,
        comment: ''
      });
-     this.commentFormDirective.resetForm();
+
    }
 
  }
