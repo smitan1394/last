@@ -1,7 +1,9 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Feedback, ContactType } from '../shared/feedback';
-import { flyInOut } from '../animations/app.animation';
+import { flyInOut, expand } from '../animations/app.animation';
+import { FeedbackService } from '../services/feedback.service';
+import {  delay } from 'rxjs/operators';
 
 @Component({
   selector: 'app-contact',
@@ -12,7 +14,8 @@ import { flyInOut } from '../animations/app.animation';
  'style': 'display: block;'
  },
  animations: [
-   flyInOut()
+   flyInOut(),
+   expand()
  ]
 })
 export class ContactComponent implements OnInit {
@@ -48,9 +51,14 @@ formErrors = {
 
   feedbackForm: FormGroup;
   feedback: Feedback;
+  feedbackcopy: Feedback;
   contactType = ContactType;
-
-  constructor(private fb: FormBuilder) {
+  errMess: string;
+  s: boolean;
+  r: boolean;
+  constructor(private fb: FormBuilder,
+  private feedbackService: FeedbackService,
+     @Inject('BaseURL') private BaseURL) {
     this.createForm();
   }
 
@@ -93,9 +101,21 @@ formErrors = {
     }
 
   onSubmit() {
-    this.feedback = this.feedbackForm.value;
+    this.s=false; this.r=false;
+        this.feedback = this.feedbackForm.value;
     console.log(this.feedback);
-    this.feedbackForm.reset({
+      const req= this.feedbackService.submitFeedback(this.feedback);
+    this.s=true;
+
+    /*setTimeout(() => req.subscribe(feedback => this.feedback,
+         errmess => { this.feedback = null; this.errMess = <any>errmess; }), 5000);*/
+    req.subscribe(feedback => this.feedback,
+         errmess => { this.feedback = null; this.errMess = <any>errmess; });
+setTimeout(() => this.r=true, 2000);
+
+    setTimeout(() => {this.r=false; this.s=false;}, 5000);
+
+       this.feedbackForm.reset({
       firstname: '',
       lastname: '',
       telnum: '',
@@ -105,6 +125,7 @@ formErrors = {
       message: ''
     });
     this.feedbackFormDirective.resetForm();
+
   }
 
 }
