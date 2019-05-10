@@ -107,10 +107,9 @@ formErrors = {
       const req= this.feedbackService.submitFeedback(this.feedback);
     this.s=true;
 
-    /*setTimeout(() => req.subscribe(feedback => this.feedback,
-         errmess => { this.feedback = null; this.errMess = <any>errmess; }), 5000);*/
-    req.subscribe(feedback => this.feedback,
+req.subscribe(feedback => this.feedback,
          errmess => { this.feedback = null; this.errMess = <any>errmess; });
+
 setTimeout(() => this.r=true, 2000);
 
     setTimeout(() => {this.r=false; this.s=false;}, 5000);

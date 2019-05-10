@@ -84,7 +84,7 @@
     <button type="submit"  mat-button class="background-primary text-floral-white">Submit</button>
     </form>
    </div>
-   <div [hidden]="!s" [@expand]>
+   <div [hidden]="!s  || errMess" [@expand]>
     <h4>Submitting Form</h4>
      <mat-spinner></mat-spinner>
    </div>
