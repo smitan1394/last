@@ -40,9 +40,9 @@
   <div fxFlex fxFlexOffset="20px" class="form-size"  [@expand]>
   <h3>Send us your Feedback</h3>
   <!--<p>{{ feedbackForm.value | json }} {{ feedbackForm.status | json }}</p>-->
-  <div *ngIf="!r" [@expand]>
-   <div *ngIf="!s" [@expand]>
-    <form novalidate [formGroup]="feedbackForm" #fform="ngForm" (ngSubmit)="onSubmit()" >
+  <div *ngIf="!received" [@expand]>
+   <div *ngIf="!submitted" [@expand]>
+    <form novalidate [formGroup]="feedbackForm" #fform="ngForm" (ngSubmit)="onSubmit()" [@expand]>
       <p>
         <mat-form-field class="half-width">
           <input matInput formControlName="firstname" placeholder="First Name" type="text" required>
@@ -84,12 +84,16 @@
     <button type="submit"  mat-button class="background-primary text-floral-white">Submit</button>
     </form>
    </div>
-   <div [hidden]="!s  || errMess" [@expand]>
+
+   <!-- I have used 2 variables to track the status of feedback submission- submitted and received  -which are boolean so intial loading value is false
+   and made them true as and when the state of the application reaches that point and again false when needed -->
+
+   <div [hidden]="!submitted  || errMess" [@expand]>
     <h4>Submitting Form</h4>
      <mat-spinner></mat-spinner>
    </div>
   </div>
-  <div [hidden]="!r" [@expand]>
+  <div [hidden]="!received" [@expand]>
     <h4>Your Submission</h4>
       <p>First Name: {{feedback.firstname}} </p>
        <p>Last Name: {{feedback.lastname }} </p>

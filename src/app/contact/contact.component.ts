@@ -54,8 +54,8 @@ formErrors = {
   feedbackcopy: Feedback;
   contactType = ContactType;
   errMess: string;
-  s: boolean;
-  r: boolean;
+  submitted: boolean;
+  received: boolean;
   constructor(private fb: FormBuilder,
   private feedbackService: FeedbackService,
      @Inject('BaseURL') private BaseURL) {
@@ -100,19 +100,21 @@ formErrors = {
       }
     }
 
+/* I have used 2 variables to track the status of feedback submission- submitted and received  -which are boolean so intial loading value is false
+and made them true as and when the state of the application reaches that point and again false when needed*/
+
   onSubmit() {
-    this.s=false; this.r=false;
         this.feedback = this.feedbackForm.value;
-    console.log(this.feedback);
+    
       const req= this.feedbackService.submitFeedback(this.feedback);
-    this.s=true;
+    this.submitted=true;
 
 req.subscribe(feedback => this.feedback,
          errmess => { this.feedback = null; this.errMess = <any>errmess; });
 
-setTimeout(() => this.r=true, 2000);
+setTimeout(() => this.received=true, 2000);
 
-    setTimeout(() => {this.r=false; this.s=false;}, 5000);
+    setTimeout(() => {this.received=false; this.submitted=false;}, 5000);
 
        this.feedbackForm.reset({
       firstname: '',
