@@ -3,14 +3,14 @@ const path = require('path');
 const app = express();
 // Run the app by serving the static files
 // in the dist directory
-const fs = require('fs')
+/*const fs = require('fs')
 let jsonData = {}
 fs.readFile('./db.json', 'utf-8', (err, data) => {
   if (err) throw err
   
   jsonData = JSON.parse(data)
 })
-app.use(express.static(jsonData));
+app.use(express.static(jsonData));*/
 
 app.use(express.static(__dirname + '/dist/conFusion'));
 
