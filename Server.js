@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const bodyParser = require('body-parser');
 // Run the app by serving the static files
 // in the dist directory
 const fs = require('fs')
@@ -11,7 +10,7 @@ fs.readFile('./db.json', 'utf-8', (err, data) => {
   
   jsonData = JSON.parse(data)
 })
-app.use(bodyParser.json());
+app.use(jsonData);
 
 app.use(express.static(__dirname + '/dist/conFusion'));
 
