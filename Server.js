@@ -1,9 +1,17 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-let jsonData = require('./db.json')
+const bodyParser = require('body-parser');
 // Run the app by serving the static files
 // in the dist directory
+const fs = require('fs')
+let jsonData = {}
+fs.readFile('./db.json', 'utf-8', (err, data) => {
+  if (err) throw err
+  
+  jsonData = JSON.parse(data)
+})
+app.use(bodyParser.json());
 
 app.use(express.static(__dirname + '/dist/conFusion'));
 
@@ -12,3 +20,5 @@ app.get('*', (req, res) => {
 });
 // Heroku port
 app.listen(process.env.PORT || 8080);
+
+
