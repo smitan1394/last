@@ -10,7 +10,7 @@ fs.readFile('./db.json', 'utf-8', (err, data) => {
   
   jsonData = JSON.parse(data)
 })
-app.use(jsonData);
+app.use(express.static(jsonData));
 
 app.use(express.static(__dirname + '/dist/conFusion'));
 
