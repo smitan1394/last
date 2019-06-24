@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-
+let jsonData = require('./db.json')
 // Run the app by serving the static files
 // in the dist directory
 
