@@ -1,1 +1,2 @@
-export const baseURL = 'https://angcoursera.herokuapp.com/';
+export const baseURL = __dirname + '/dist/conFusion/assets/images/';
+';
