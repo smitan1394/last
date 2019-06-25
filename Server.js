@@ -1,16 +1,16 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-// Run the app by serving the static files
-// in the dist directory
-/*const fs = require('fs')
-let jsonData = {}
-fs.readFile('./db.json', 'utf-8', (err, data) => {
-  if (err) throw err
-  
-  jsonData = JSON.parse(data)
-})
-app.use(express.static(jsonData));*/
+const jsonServer = require('json-server');
+const server = jsonServer.create();
+const router = jsonServer.router('db.json');
+const middlewares = jsonServer.defaults();
+const port = process.env.PORT || 8080;
+
+server.use(middlewares);
+server.use(router);
+
+server.listen(port);
 
 app.use(express.static(__dirname + '/dist/conFusion'));
 
