@@ -1,0 +1,691 @@
+{
+  "dishes": [
+    {
+      "id": "0",
+      "name": "Uthappizza",
+      "image": "./images/uthappizza.png",
+      "category": "mains",
+      "featured": true,
+      "label": "Hot",
+      "price": "4.99",
+      "description": "A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Imagine all the eatables, living in conFusion!",
+          "author": "John Lemon",
+          "date": "2012-10-16T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+          "author": "Paul McVites",
+          "date": "2014-09-05T17:57:28.556094Z"
+        },
+        {
+          "rating": 3,
+          "comment": "Eat it, just eat it!",
+          "author": "Michael Jaikishan",
+          "date": "2015-02-13T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Ultimate, Reaching for the stars!",
+          "author": "Ringo Starry",
+          "date": "2013-12-02T17:57:28.556094Z"
+        },
+        {
+          "rating": 2,
+          "comment": "It's your birthday, we're gonna party!",
+          "author": "25 Cent",
+          "date": "2011-12-02T17:57:28.556094Z"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Zucchipakoda",
+      "image": "./images/zucchipakoda.png",
+      "category": "appetizer",
+      "featured": false,
+      "label": "",
+      "price": "1.99",
+      "description": "Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Imagine all the eatables, living in conFusion!",
+          "author": "John Lemon",
+          "date": "2012-10-16T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+          "author": "Paul McVites",
+          "date": "2014-09-05T17:57:28.556094Z"
+        },
+        {
+          "rating": 3,
+          "comment": "Eat it, just eat it!",
+          "author": "Michael Jaikishan",
+          "date": "2015-02-13T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Ultimate, Reaching for the stars!",
+          "author": "Ringo Starry",
+          "date": "2013-12-02T17:57:28.556094Z"
+        },
+        {
+          "rating": 2,
+          "comment": "It's your birthday, we're gonna party!",
+          "author": "25 Cent",
+          "date": "2011-12-02T17:57:28.556094Z"
+        },
+        {
+          "author": "xbnm",
+          "comment": "zxmnbvmn",
+          "rating": 4,
+          "date": "2019-05-02T10:02:37.868Z"
+        },
+        {
+          "author": "vncb",
+          "comment": "cnvcnbmvn,",
+          "rating": 3,
+          "date": "2019-05-06T10:13:54.409Z"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Vadonut",
+      "image": "./images/vadonut.png",
+      "category": "appetizer",
+      "featured": false,
+      "label": "New",
+      "price": "1.99",
+      "description": "A quintessential ConFusion experience, is it a vada or is it a donut?",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Imagine all the eatables, living in conFusion!",
+          "author": "John Lemon",
+          "date": "2012-10-16T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+          "author": "Paul McVites",
+          "date": "2014-09-05T17:57:28.556094Z"
+        },
+        {
+          "rating": 3,
+          "comment": "Eat it, just eat it!",
+          "author": "Michael Jaikishan",
+          "date": "2015-02-13T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Ultimate, Reaching for the stars!",
+          "author": "Ringo Starry",
+          "date": "2013-12-02T17:57:28.556094Z"
+        },
+        {
+          "rating": 2,
+          "comment": "It's your birthday, we're gonna party!",
+          "author": "25 Cent",
+          "date": "2011-12-02T17:57:28.556094Z"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "ElaiCheese Cake",
+      "image": "./images/elaicheesecake.png",
+      "category": "dessert",
+      "featured": false,
+      "label": "",
+      "price": "2.99",
+      "description": "A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Imagine all the eatables, living in conFusion!",
+          "author": "John Lemon",
+          "date": "2012-10-16T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+          "author": "Paul McVites",
+          "date": "2014-09-05T17:57:28.556094Z"
+        },
+        {
+          "rating": 3,
+          "comment": "Eat it, just eat it!",
+          "author": "Michael Jaikishan",
+          "date": "2015-02-13T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Ultimate, Reaching for the stars!",
+          "author": "Ringo Starry",
+          "date": "2013-12-02T17:57:28.556094Z"
+        },
+        {
+          "rating": 2,
+          "comment": "It's your birthday, we're gonna party!",
+          "author": "25 Cent",
+          "date": "2011-12-02T17:57:28.556094Z"
+        }
+      ]
+    }
+  ],
+  "promotions": [
+    {
+      "id": "0",
+      "name": "Weekend Grand Buffet",
+      "image": "./images/buffet.png",
+      "featured": true,
+      "label": "New",
+      "price": "19.99",
+      "description": "Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person "
+    }
+  ],
+  "leadership": [
+    {
+      "id": "0",
+      "name": "Peter Pan",
+      "image": "./images/alberto.png",
+      "designation": "Chief Epicurious Officer",
+      "featured": false,
+      "abbr": "CEO",
+      "description": "Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which The Frying Pan became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections."
+    },
+    {
+      "id": "1",
+      "name": "Dhanasekaran Witherspoon",
+      "image": "./images/alberto.png",
+      "designation": "Chief Food Officer",
+      "featured": false,
+      "abbr": "CFO",
+      "description": "Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, Everything that runs, wins, and everything that stays, pays!"
+    },
+    {
+      "id": "2",
+      "name": "Agumbe Tang",
+      "image": "./images/alberto.png",
+      "designation": "Chief Taste Officer",
+      "featured": false,
+      "abbr": "CTO",
+      "description": "Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, You click only if you survive my lick."
+    },
+    {
+      "id": "3",
+      "name": "Alberto Somayya",
+      "image": "./images/alberto.png",
+      "designation": "Executive Chef",
+      "featured": true,
+      "abbr": "EC",
+      "description": "Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!"
+    }
+  ],
+  "feedback": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "firstname": "ccmb",
+      "lastname": "cbnmbcm",
+      "telnum": "587",
+      "email": "gh@ygj.hgf",
+      "agree": false,
+      "contacttype": "None",
+      "message": "dgjjjjjjjjjjjjjjjj",
+      "id": 3
+    },
+    {
+      "firstname": "cnb",
+      "lastname": "xnv",
+      "telnum": "475",
+      "email": "dgf@gcjh.uyg",
+      "agree": false,
+      "contacttype": "None",
+      "message": "afhjgjkh",
+      "id": 4
+    },
+    {
+      "firstname": "dgjhj",
+      "lastname": "mnb",
+      "telnum": "5766",
+      "email": "sshj@jk.hgjh",
+      "agree": false,
+      "contacttype": "None",
+      "message": "skjljnjnl",
+      "id": 5
+    },
+    {
+      "firstname": "khgk",
+      "lastname": "nvvn",
+      "telnum": "456",
+      "email": "rfh@gfng.gf",
+      "agree": false,
+      "contacttype": "None",
+      "message": "dejtgfjyh",
+      "id": 6
+    },
+    {
+      "firstname": "fjfj",
+      "lastname": "dhg",
+      "telnum": "36",
+      "email": "dg@hgj.hg",
+      "agree": false,
+      "contacttype": "None",
+      "message": "xgjcjkh",
+      "id": 7
+    },
+    {
+      "firstname": "egkhwg",
+      "lastname": "webljb",
+      "telnum": "456",
+      "email": "yagf@fhj.hgj",
+      "agree": false,
+      "contacttype": "None",
+      "message": "yfkgujlhlik",
+      "id": 8
+    },
+    {
+      "firstname": "hv,m",
+      "lastname": "mnbvm",
+      "telnum": "357",
+      "email": "vj@vjh.hjg",
+      "agree": false,
+      "contacttype": "None",
+      "message": "djtgkhuj",
+      "id": 9
+    },
+    {
+      "firstname": "fkhcj",
+      "lastname": "khkgg",
+      "telnum": "546",
+      "email": "gfj@jh.fg",
+      "agree": false,
+      "contacttype": "None",
+      "message": "vfhvn,bjm",
+      "id": 10
+    },
+    {
+      "firstname": "jhk",
+      "lastname": "vkhk",
+      "telnum": "365",
+      "email": "ghfj@jvkh.hj",
+      "agree": false,
+      "contacttype": "None",
+      "message": "fkhjlk;n;lknm",
+      "id": 11
+    },
+    {
+      "firstname": "hfj",
+      "lastname": "khvk",
+      "telnum": "476",
+      "email": "fjjh@jhv.fjg",
+      "agree": false,
+      "contacttype": "None",
+      "message": "dgjfkgljhkj;l",
+      "id": 12
+    },
+    {
+      "firstname": "kn",
+      "lastname": "v,n",
+      "telnum": "467",
+      "email": "gvmn@.jh.hjg",
+      "agree": false,
+      "contacttype": "None",
+      "message": "cjhv,jvnb",
+      "id": 13
+    },
+    {
+      "firstname": "fgh",
+      "lastname": "fkhgk",
+      "telnum": "4658",
+      "email": "jhgf@hjg.fyh",
+      "agree": false,
+      "contacttype": "None",
+      "message": "dtjgfhj,",
+      "id": 14
+    },
+    {
+      "firstname": "cjhcm",
+      "lastname": "hjfmvhj,j",
+      "telnum": "357",
+      "email": "fjf@jhg.hgftiy",
+      "agree": false,
+      "contacttype": "None",
+      "message": "zytrxjghjgjhghkhjgih",
+      "id": 15
+    },
+    {
+      "firstname": "jh",
+      "lastname": "hjljl,jn",
+      "telnum": "578",
+      "email": "fjh@u.hgd",
+      "agree": false,
+      "contacttype": "None",
+      "message": "fhulykkkkkkkk",
+      "id": 16
+    },
+    {
+      "firstname": "ghk",
+      "lastname": "fhkgj",
+      "telnum": "467",
+      "email": "fhjg@hjbk.fuyfh",
+      "agree": false,
+      "contacttype": "None",
+      "message": "vkkkkkkkkkkkkkkkkkk",
+      "id": 17
+    },
+    {
+      "firstname": "jvh",
+      "lastname": "fjhk",
+      "telnum": "23565",
+      "email": "djgj@hgk.fyk",
+      "agree": false,
+      "contacttype": "None",
+      "message": "xtkuyyuvlgiu",
+      "id": 18
+    },
+    {
+      "firstname": "fjh",
+      "lastname": "gjk",
+      "telnum": "56",
+      "email": "fhk@jk.h",
+      "agree": false,
+      "contacttype": "None",
+      "message": "cyru",
+      "id": 19
+    },
+    {
+      "firstname": "fhjgdah",
+      "lastname": ",wkqhgU",
+      "telnum": "4576",
+      "email": "ghj@hj.hj",
+      "agree": false,
+      "contacttype": "None",
+      "message": "fkujh",
+      "id": 20
+    },
+    {
+      "firstname": "fhjhgk",
+      "lastname": "vnv,bj",
+      "telnum": "356",
+      "email": "vkhgk@hvk.cjg",
+      "agree": false,
+      "contacttype": "None",
+      "message": "fhjkhg",
+      "id": 21
+    },
+    {
+      "firstname": "fhjfh",
+      "lastname": "fhkljl",
+      "telnum": "5687",
+      "email": "khggkh@gf.oij",
+      "agree": false,
+      "contacttype": "None",
+      "message": "cu;;yihknmn.,n.",
+      "id": 22
+    },
+    {
+      "firstname": "dgfj",
+      "lastname": "cmv ",
+      "telnum": "357",
+      "email": "dhgjfdf@hgvfj.jyfjyh",
+      "agree": false,
+      "contacttype": "None",
+      "message": "ycgilyiyoiu",
+      "id": 23
+    },
+    {
+      "firstname": "dytjg",
+      "lastname": "ucyuyli",
+      "telnum": "4356",
+      "email": "fhj@kgh.jfhg",
+      "agree": false,
+      "contacttype": "None",
+      "message": "ftcliyiuvb",
+      "id": 24
+    },
+    {
+      "firstname": "rsjy",
+      "lastname": "jhxj",
+      "telnum": "585823",
+      "email": "yddtj@jkh.jjg",
+      "agree": false,
+      "contacttype": "None",
+      "message": "cydtxicyv .lj",
+      "id": 25
+    },
+    {
+      "firstname": "fidux",
+      "lastname": "gciyk",
+      "telnum": "437",
+      "email": "utx@ukvi.uyfv",
+      "agree": false,
+      "contacttype": "None",
+      "message": "usoifoyuo",
+      "id": 26
+    },
+    {
+      "firstname": "fkux",
+      "lastname": "ykhn",
+      "telnum": "3668",
+      "email": "gcgug@yigug.xyuud",
+      "agree": false,
+      "contacttype": "None",
+      "message": "cyulivb",
+      "id": 27
+    },
+    {
+      "firstname": "gfckjh",
+      "lastname": "dh",
+      "telnum": "54",
+      "email": "gjc@hkhv.uyvu",
+      "agree": false,
+      "contacttype": "None",
+      "message": "yfoivlbkijctgvjhh",
+      "id": 28
+    },
+    {
+      "firstname": "cj",
+      "lastname": "cyucki",
+      "telnum": "43897",
+      "email": "kjc@fhvl.tcyuctu",
+      "agree": false,
+      "contacttype": "None",
+      "message": "cukivvibniy",
+      "id": 29
+    },
+    {
+      "firstname": "fxjy",
+      "lastname": "xg,kjcgk",
+      "telnum": "365",
+      "email": "fxh@futu.ytiu",
+      "agree": false,
+      "contacttype": "None",
+      "message": "5sd98fgyoi",
+      "id": 30
+    },
+    {
+      "firstname": "diuy",
+      "lastname": "ciuyc",
+      "telnum": "479",
+      "email": "fdyyjf@guj.yudtcu",
+      "agree": false,
+      "contacttype": "None",
+      "message": "fxukchvlbk",
+      "id": 31
+    },
+    {
+      "firstname": "dcuyt",
+      "lastname": "xjugk",
+      "telnum": "4787",
+      "email": "ftu@fyy.cyfy",
+      "agree": false,
+      "contacttype": "None",
+      "message": "ftyiuoi;",
+      "id": 32
+    },
+    {
+      "firstname": "fxhf",
+      "lastname": "diub",
+      "telnum": "45769",
+      "email": "cgkjcg@fyjgcu.yugck",
+      "agree": false,
+      "contacttype": "None",
+      "message": "cvyikblj",
+      "id": 33
+    },
+    {
+      "firstname": "kcuhvkj",
+      "lastname": "tuckvhk",
+      "telnum": "56987",
+      "email": "chkj@chj.vhl",
+      "agree": false,
+      "contacttype": "None",
+      "message": "tdkcvilivul",
+      "id": 34
+    },
+    {
+      "firstname": "kjvkh",
+      "lastname": "clkjhk",
+      "telnum": "654576",
+      "email": "ydui@fu.fiyv",
+      "agree": false,
+      "contacttype": "None",
+      "message": "xuckvviuu",
+      "id": 35
+    },
+    {
+      "firstname": "vivhj",
+      "lastname": "ydtiuc",
+      "telnum": "357",
+      "email": "vgvjg@clivjluih.kcuk",
+      "agree": false,
+      "contacttype": "None",
+      "message": "yck j.l",
+      "id": 36
+    },
+    {
+      "firstname": "ivuh",
+      "lastname": "dkfh",
+      "telnum": "4867",
+      "email": "jkhvjh@clgj.yucjg",
+      "agree": false,
+      "contacttype": "None",
+      "message": "vhljl; jfyiky",
+      "id": 37
+    },
+    {
+      "firstname": "iuck",
+      "lastname": "kchk",
+      "telnum": "569",
+      "email": "cjhhx@fugu.fiu",
+      "agree": false,
+      "contacttype": "None",
+      "message": "yfoiloinjo",
+      "id": 38
+    },
+    {
+      "firstname": "fdujyc",
+      "lastname": "fkjh",
+      "telnum": "468",
+      "email": "fjjk@fy.cyugk",
+      "agree": false,
+      "contacttype": "None",
+      "message": "iucikvbminoi",
+      "id": 39
+    },
+    {
+      "firstname": "vi",
+      "lastname": "vkh",
+      "telnum": "59",
+      "email": "gfu@fcjvg.yucty",
+      "agree": false,
+      "contacttype": "None",
+      "message": "fivlboui",
+      "id": 40
+    },
+    {
+      "firstname": "cgkhk",
+      "lastname": "vlkjb",
+      "telnum": "3645",
+      "email": "hghnjc@jk.yct",
+      "agree": false,
+      "contacttype": "None",
+      "message": "srdi76bno",
+      "id": 41
+    },
+    {
+      "firstname": "xryu",
+      "lastname": "duyjc",
+      "telnum": "465",
+      "email": "fhyhj@uf.fyuk",
+      "agree": false,
+      "contacttype": "None",
+      "message": "fiu",
+      "id": 42
+    },
+    {
+      "firstname": "cj ",
+      "lastname": "fjchvg",
+      "telnum": "486",
+      "email": "xfhj@dyjv.dy",
+      "agree": false,
+      "contacttype": "None",
+      "message": "srudiyoi",
+      "id": 43
+    },
+    {
+      "firstname": "dj",
+      "lastname": "cjyvb",
+      "telnum": "4565",
+      "email": "kiu@fu.ycjgvju",
+      "agree": false,
+      "contacttype": "None",
+      "message": "tiuvbyhk.",
+      "id": 44
+    },
+    {
+      "firstname": "gcivk",
+      "lastname": "cjvbgjk",
+      "telnum": "468",
+      "email": "xjhc@cyth.uyv",
+      "agree": false,
+      "contacttype": "None",
+      "message": "dtiuvbih;onm",
+      "id": 45
+    },
+    {
+      "firstname": "dxtyrukr",
+      "lastname": "xtucktv",
+      "telnum": "376",
+      "email": "ydj@fyu.dyujc",
+      "agree": false,
+      "contacttype": "None",
+      "message": "rsyxlutivk8b7t",
+      "id": 46
+    },
+    {
+      "firstname": "vglk",
+      "lastname": "ckjuvghj",
+      "telnum": "48676",
+      "email": "yfj@hjvgh.cycvy",
+      "agree": false,
+      "contacttype": "None",
+      "message": "cvkiubloimo",
+      "id": 47
+    }
+  ]
+}
