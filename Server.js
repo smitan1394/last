@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 var jsonServer = require('json-server');
 
-app.use('/api', jsonServer.router('db.json'));
+app.use('/', jsonServer.router('db.json'));
 app.use(express.static(__dirname + '/dist/conFusion'));
 
 app.get('*', (req, res) => {
